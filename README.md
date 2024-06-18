@@ -90,7 +90,7 @@ L'API de Blagues Carambar est un service web qui vous permet de gérer une colle
 L'API est déployée sur Render. Vous pouvez y accéder à : [https://carambar-jokes-79ge.onrender.com](https://carambar-jokes-79ge.onrender.com)
 
 ### Frontend
-Le frontend est déployé sur GitHub Pages. Vous pouvez y accéder à : [https://kabawn.github.io/carambar-jokes](https://kabawn.github.io/carambar-jokes)
+Le frontend est déployé sur GitHub Pages. Vous pouvez y accéder à : https://kabawn.github.io/carambar-frontend/
 
 ## Utilisation
 

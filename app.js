@@ -1,22 +1,28 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors'); // Import the cors package
+const cors = require('cors');
 const sequelize = require('./config/database');
 const jokeRoutes = require('./routes/jokeRoutes');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger/swagger');
+const Joke = require('./models/joke');
+const seedDatabase = require('./seed');
 
 const app = express();
 
-// Use the cors middleware
 app.use(cors());
-
 app.use(bodyParser.json());
 
 // Synchronize with the database
 sequelize.sync()
-  .then(() => {
+  .then(async () => {
     console.log('Database connected and synchronized');
+
+    // Check if the database is empty and seed it if necessary
+    const jokeCount = await Joke.count();
+    if (jokeCount === 0) {
+      await seedDatabase();
+    }
   })
   .catch((error) => {
     console.error('Unable to connect to the database:', error);

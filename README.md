@@ -137,11 +137,5 @@ La documentation complète de l'API est disponible à `/api-docs`. Vous pouvez y
 Ce projet est licencié sous la licence MIT.
 ```
 
-### Instructions pour Mettre à Jour le README sur GitHub
 
-1. **Copiez le contenu** du texte `README.md` ci-dessus.
-2. **Allez sur votre dépôt GitHub** : [https://github.com/kabawn/carambar-jokes](https://github.com/kabawn/carambar-jokes)
-3. **Cliquez sur le fichier `README.md`** dans votre dépôt.
-4. **Cliquez sur l'icône du crayon** (✏️) pour éditer le fichier.
-5. **Collez le nouveau contenu du README** et enregistrez les modifications en faisant défiler vers le bas et en cliquant sur "Commit changes".
 
